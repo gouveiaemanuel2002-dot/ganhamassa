@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ganha Massa - Plano de Treino</title>
+  <meta name="description" content="Plano de treino para ganhar massa muscular. Acesso a programas semanais, vídeos, dieta e acompanhamento por apenas 20€ / mês." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#ff6b6b;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#e6eef8;background:linear-gradient(180deg,#071022 0%,#071020 40%,#041014 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:36px auto;padding:0 20px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:54px;height:54px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ffd166);display:flex;align-items:center;justify-content:center;font-weight:700;color:#082032}
+    h1{font-size:22px;margin:0}
+    p.lead{color:var(--muted);margin:4px 0 0}
+    nav a{color:#cfe9ff;text-decoration:none;margin-left:18px}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;padding:26px;border-radius:14px;background:linear-gradient(135deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:inset 0 -1px 0 rgba(255,255,255,0.02)}
+    .price{font-size:32px;font-weight:700;margin:6px 0}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--accent);color:#081822;font-weight:700;text-decoration:none}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .feature{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+    h2{margin:0 0 10px}
+    ul{margin:8px 0 0;padding-left:18px}
+    .plans{display:flex;flex-direction:column;gap:12px}
+    .plan{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px;background:var(--glass)}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:28px;padding:18px;border-radius:10px;color:var(--muted);text-align:center}
+    .faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .exercise-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    code{background:#071426;padding:6px;border-radius:6px;font-family:monospace;font-size:13px}
+    /* responsive */
+    @media (max-width:900px){.hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr} .exercise-list{grid-template-columns:1fr} nav a{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">GM</div>
+        <div>
+          <h1>Ganha Massa</h1>
+          <p class="lead">Plano simples e eficaz para ganhar músculo. 20€ / mês</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#planos">Planos</a>
+        <a href="#programa">Programa</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="hero card">
+      <div>
+        <h2>Transforma o teu corpo sem complicações</h2>
+        <p class="muted">Planos semanais com treino, dieta e vídeos. Para quem quer ganhar massa muscular sem perder a cabeça.</p>
+
+        <div class="grid" style="margin-top:16px">
+          <div class="feature">
+            <strong>Treinos 4x/semana</strong>
+            <p class="small">Focados em força e hipertrofia. Aumenta carga, não a desculpa.</p>
+          </div>
+          <div class="feature">
+            <strong>Dieta prática</strong>
+            <p class="small">Cardápios simples com alternativas para o dia a dia.</p>
+          </div>
+          <div class="feature">
+            <strong>Acompanhamento</strong>
+            <p class="small">Feedback semanal e ajustes. Não estás sozinho.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:18px">O que incluis</h3>
+        <ul>
+          <li>Plano mensal com progressão</li>
+          <li>Videos explicativos para cada exercício</li>
+          <li>Checklist de alimentação e suplementação opcional</li>
+          <li>Chat para tirar dúvidas (resposta 48-72h)</li>
+        </ul>
+
+        <div style="margin-top:18px">
+          <a class="btn" href="#assinatura" onclick="document.getElementById('assinatura').scrollIntoView({behavior:'smooth'})">Assina por 20€ / mês</a>
+          <span style="margin-left:12px;color:var(--muted)">Cancelamento fácil a qualquer momento</span>
+        </div>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div class="small">Plano mensal</div>
+              <div class="price">20€ <span class="small">/ mês</span></div>
+            </div>
+            <div style="text-align:right">
+              <div class="small">Começa já</div>
+              <div style="margin-top:8px"><a class="btn" href="#assinatura" onclick="document.getElementById('assinatura').scrollIntoView({behavior:'smooth'})">Assinar</a></div>
+            </div>
+          </div>
+
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0">
+
+          <div class="small">Testado por gajos e gajas reais</div>
+          <div style="margin-top:10px">
+            <strong>Plano rápido</strong>
+            <div class="small">Treino simples com progressão semanal</div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:12px" class="card small">
+          Dúvidas? Envia-nos uma mensagem via email: <br><code>apoio@ganhamassa.pt</code>
+        </div>
+      </aside>
+    </section>
+
+    <section id="programa" style="margin-top:18px" class="card">
+      <h2>Programa de 4 semanas (exemplo)</h2>
+      <p class="muted">Este é um exemplo. O plano mensal inclui progressão baseada nos teus resultados.</p>
+
+      <div style="margin-top:12px" class="exercise-list">
+        <div class="card">
+          <strong>Semana A - 4 treinos</strong>
+          <ul>
+            <li>Segunda: Peito & Tríceps (Supino, Supino inclinado, Paralelas)</li>
+            <li>Terça: Pernas (Agachamento, Stiff, Leg press)</li>
+            <li>Quinta: Costas & Bíceps (Remada, Puxada, Curl)</li>
+            <li>Sexta: Ombros + Core (Desenvolvimento, Elevações laterais)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Semana B - Volume moderado</strong>
+          <ul>
+            <li>Mesma divisão mas com mais repetições e menor carga</li>
+            <li>Inclui técnicas como drop sets e tempos controlados</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 style="margin-top:12px">Checklist rápido</h3>
+      <ul>
+        <li>Calorias: excedente de 250-500 kcal por dia</li>
+        <li>Proteína: 1.6 a 2.2 g/kg de peso por dia</li>
+        <li>Recuperação: 7-9 horas de sono</li>
+        <li>Progressão: aumenta carga quando completa as reps com boa forma</li>
+      </ul>
+    </section>
+
+    <section id="planos" style="margin-top:18px">
+      <h2>Planos</h2>
+      <div class="plans">
+        <div class="plan">
+          <div>
+            <strong>Plano Mensal</strong>
+            <div class="small">Tudo incluído. Acesso a todos os programas e vídeos</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-weight:700">20€ / mês</div>
+            <div class="small">Renovação automática</div>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div>
+            <strong>Acompanhamento Premium</strong>
+            <div class="small">Inclui contacto semanal com o treinador (opcional)</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-weight:700">+10€ / mês</div>
+            <div class="small">Pacote opcional</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="assinatura" class="card" style="margin-top:12px">
+        <h3>Assina</h3>
+        <p class="muted">20€ / mês. Cancelamento em qualquer momento.</p>
+
+        <form id="subscribeForm" onsubmit="return handleSubscribe(event)">
+          <label class="small">Nome completo</label><br>
+          <input id="name" required placeholder="Ex: João Silva" style="width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);margin-top:6px;background:transparent;color:inherit"><br>
+          <label class="small" style="margin-top:8px;display:block">Email</label>
+          <input id="email" type="email" required placeholder="exemplo@dominio.pt" style="width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);margin-top:6px;background:transparent;color:inherit"><br>
+
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+            <button class="btn" type="submit">Pagar 20€ / mês</button>
+            <div class="small">Ou usa este código de teste: <code>TESTE20</code></div>
+          </div>
+        </form>
+
+        <div id="subscribeMsg" class="small" style="margin-top:12px;color:var(--muted)"></div>
+      </div>
+    </section>
+
+    <section id="faq" style="margin-top:18px" class="card">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq">
+        <div>
+          <strong>Posso cancelar quando quiser?</strong>
+          <p class="small">Sim. Cancela e não serás cobrado no mês seguinte.</p>
+        </div>
+        <div>
+          <strong>Preciso de ginásio?</strong>
+          <p class="small">Os treinos têm opções para ginásio e para casa com material mínimo.</p>
+        </div>
+
+        <div>
+          <strong>Estou a começar. Serve-me?</strong>
+          <p class="small">Sim. Há progressões e variações para iniciantes.</p>
+        </div>
+        <div>
+          <strong>Quando recebo o plano?</strong>
+          <p class="small">Imediatamente após confirmação do pagamento é enviado um email com acesso.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" style="margin-top:18px" class="card">
+      <h2>Contacto</h2>
+      <p class="muted">Para parcerias ou questões envia email para <code>parcerias@ganhamassa.pt</code> ou usa o formulário.</p>
+      <form onsubmit="event.preventDefault();alert('Mensagem enviada — exemplo')">
+        <input placeholder="Nome" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04)"><br>
+        <input placeholder="Email" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04)"><br>
+        <textarea placeholder="Mensagem" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);min-height:90px"></textarea><br>
+        <button class="btn" style="margin-top:8px">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Ganha Massa — 20€ / mês • Política de Privacidade • Termos</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    function handleSubscribe(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if(!name || !email) return;
+      // Nota: aqui deves ligar a um serviço real de pagamentos como Stripe ou PayPal
+      const msg = `Obrigado ${name}. Recebemos o pedido. Irá ser cobrado 20€ / mês. (Exemplo: sem pagamento real)`;
+      document.getElementById('subscribeMsg').innerText = msg;
+      // simula envio de email
+      setTimeout(()=>{
+        document.getElementById('subscribeMsg').innerText += ' Email de boas-vindas enviado para ' + email;
+      },900);
+      return false;
+    }
+  </script>
+</body>
+</html>
